@@ -1,0 +1,62 @@
+/**
+ * devsummit theme for reveal.js.
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Open Sans', sans-serif;
+$mainColor: #fff;
+$headingFont: 'Quicksand', sans-serif;
+$headingColor: #fff;
+$headingLetterSpacing: -0.08em;
+$headingTextShadow: none;
+$backgroundColor: #f7fbfc;
+$linkColor: #3b759e;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #134674;
+
+$highlightColor: #cff370;
+
+// Fix links so they are not cut off
+.reveal a {
+	line-height: 1.3em;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// Overrides -----------------------------------
+.reveal h3.highlight {
+  font-size: 3em;
+  color: $highlightColor; 
+}
+
+.reveal img.stripped {
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+}
+
+.reveal section.left-align {
+  text-align: left;
+}
+
+.reveal span.tool-name {
+  color: $highlightColor;
+  font-weight: bold;
+  font-size: 1.25em;
+}
