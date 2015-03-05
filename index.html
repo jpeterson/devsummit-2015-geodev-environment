@@ -4,19 +4,14 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<title>Rocking and Tooling</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
+		<!-- Reveal Style and Theme -->
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
-
+		<link rel="stylesheet" href="css/theme/devsummit.css" id="theme">
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -40,16 +35,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="img/bg-devsummit.png" class="title dark">
-					<aside class="notes">
-						<p></p>
-					</aside>
-				</section>
-				<!-- <section data-background="img/bg-welcome.png" class="title dark">
-					<aside class="notes">
-						<p></p>
-					</aside>
-				</section> -->
+
 				<section data-background="img/bg-title.png" class="title dark">
 					<h2>Rocking and Tooling your GeoDev Environment</h2>
 					<!-- <h4 style="padding-top:15px">Love your Development Workflow!</h4> -->
@@ -59,40 +45,188 @@
 						<p></p>
 					</aside>
 				</section>
-				<section data-background="img/stl-dc.png" class="about dark">
-					<h2>Introductions...</h2>
+				<section data-background="img/stl-dc.png" class="about">
+					<h2>Introductions... TODO</h2>
 
 					<aside class="notes">
 						<p>Introduce ourselves, why we put this talk together</p>
 					</aside>
 				</section>
-				<section data-background="img/bg-primary.png" class="dark">
-					<h2>Introduce our talk...</h2>
-					<h3 class="fragment roll-in" style="padding-top:50px;">...and stuff</h3>
+				<section data-background="img/bg-primary.png">
+					<blockquote>
+						“Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.” <br> - Martin Golding
+					</blockquote>
+					<div>Work faster, smarter, and with quality.</div>
+					<img class="fragment roll-in" data-fragment-index="1" src="img/shining.gif" height="350">
 					<aside class="notes">
-						<p>Maybe this is where we introduce and talk about Developer Craftsmanship?</p>
-					</aside>
-				</section>
-
-				<section data-background="img/bg-primary.png" class="dark">
-					<h2>Talk about some cool stuff</h2>
-					<aside class="notes">
-						<p></p>
+						As an intro, we can talk about how tools help you work 
 					</aside>
 				</section>
 				
-				<section data-background="img/bg-primary.png" class="dark">
-					<h2>Demo some cool stuff</h2>
+				</section>
+				<section data-background="img/bg-primary.png">
+					<h3>"Software Craftsmanship"</h3>
+					<img src="img/tool.jpg" height="300" width="300">
+					<aside class="notes">
+						<p>
+							This term is used to express the idea that a developer is more than 
+							just someone programming a machine to achieve a desired output.
+							Developers, like craftsmen, develop skills and become proficient
+							using the tools of craft.
+
+							You don't see professional photograhers using disposable cameras,
+							or lumberjacks using hacksaws.
+						</p>
+					</aside>
+				</section>
+				
+				<section data-background="img/bg-primary.png">
+					<div style="line-height:2em;padding-bottom:20px">	
+						Javascript and Python are the<br />
+						Batman and Robin of geo dev.
+					</div>
+					<div>
+						<img src="img/batman.png" height="150" width="150" class="stripped">
+						<div style="width:50px; display:inline-block"></div>
+						<img src="img/robin.png" height="150" width="150" class="stripped">
+					</div>
+					<aside class="notes">
+						And if Batman and Robin don't use cool tools, I don't know who does.
+					</aside>
+				</section>
+
+<!--  				-->
+<!-- 		IDE		-->
+<!-- 					-->
+				<section data-background="img/bg-primary.png">
+					<h3 class="highlight">IDE</h3>
+					<h3>Task Automation</h3>
+					<h3>Dev Tools</h3>
+					<aside class="notes">
+						Your IDE should make you happy and be useful. 
+						It is your home as a developer, make sure you enjoy using it!
+					</aside>
+				</section>
+
+				<section data-background="img/bg-primary.png" class="left-align">
+					<h2>Theme it</h2>
+					<div style="text-align:center">
+						<span class=tool-name>Seti UI</span> (file icons, clean interface/colors)
+					</div>
+					<img src="img/seti-ui.png" width="1000" class="stripped">
+					<aside class="notes">
+						Themes do 2 things:
+							Focus your attention
+							Make you smile
+					</aside>
+				</section>
+
+				<section data-background="img/bg-primary.png" class="left-align">
+					<h2>Extend it</h2>
+					<div>
+						<img class="stripped" src="img/colors.png" height="250" style="float:left; padding-bottom:50px">
+						<div style="float:left; line-height:250px; margin:0 30px">
+							<span class="tool-name" style="font-size:1em">ColorHighlighter</span>
+						</div>
+					</div>
+					<div>
+						<div style="float:left; line-height:250px; margin:0 30px">
+							Supports SASS variables!
+						</div>
+						<img class="stripped" src="img/colors2.png" height="250">
+					</div>
+					<aside class="notes">
+						The best IDE's are extensible
+							ColorHighlighter
+					</aside>
+				</section>
+
+				<section data-background="img/bg-primary.png" class="left-align">
+					<div>
+						<div style="float:left; line-height:350px; margin:0 30px">
+							<span class="tool-name">SublimeLinter</span><br />
+						</div>
+						<img class="stripped" src="img/jshint.png" height="350" style="float:left; padding-bottom:50px">
+					</div>
+					<div>
+						<div style="float:left; line-height:300px; margin:0 30px">
+							<img class="stripped" src="img/jsformat.png" height="300" style="float:left">
+							<div style="float:left; line-height:350px; margin:0 30px;">
+								<span class="tool-name">JSFormat</span> enhances syntax
+							</div>
+						</div>
+					</div>
+					<aside class="notes">
+							Sublime Linter
+							JSFormat
+					</aside>
+				</section>
+
+				<section data-background="img/bg-primary.png" class="left-align">
+					<div>
+						<img src="img/gitgutter.png" height="250">
+						<div>
+							<span class="tool-name">GitGutter</span> for repo comparison
+						</div>
+					</div>
+					<div style="float:right">
+						<div style="max-width:95%; float:right">
+							<span class="tool-name">Emmet</span> for text expansion
+						</div>
+						<img src="img/emmet.png" height="250" style="float:right">
+					</div>
+					<aside class="notes">
+							GitGutter
+							Emmet
+					</aside>
+				</section>
+
+<!--  								-->
+<!-- TASK AUTOMATION 	-->
+<!--  								-->
+				<section data-background="img/bg-primary.png">
+					<h3>IDE</h3>
+					<h3 class="highlight">Task Automation</h3>
+					<h3>Dev Tools</h3>
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section data-background="img/bg-primary.png" class="">
+					<div>
+						<img class="stripped" src="img/grunt-logo.png" height="300">
+						<img class="stripped" src="img/gulp-logo.png" height="300">
+					</div>
+					<aside class="notes">
+						Automation lets you remove the tedious and repetetive steps
+						from your life. Stop working so hard.
+					</aside>
+				</section>
+
+<!--  							-->
+<!-- 		DEV TOOLS		-->
+<!--  							-->
+				<section data-background="img/bg-primary.png">
+					<h3>IDE</h3>
+					<h3>Task Automation</h3>
+					<h3 class="highlight">Dev Tools</h3>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+				
+				<section data-background="img/bg-primary.png">
+					<h2>talk about dev tools...</h2>
 					<aside class="notes">
 						<p></p>
 					</aside>
 				</section>
 
-				<section data-background="img/bg-alt.png" class="dark">
+				<section data-background="img/bg-alt.png">
 					<h1>THE END</h1>
-					<h3>@gavinr &amp; @jm_peterson</h3>
+					<span>@gavinr &amp; @jm_peterson</span>
 				</section>
-
 
 			</div>
 
