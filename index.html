@@ -247,6 +247,39 @@
 					</aside>
 				</section>
 
+				<section data-background="img/bg-primary.png" class="">
+					<h3>Common Grunt Workflows - JS (Placeholder)</h3>
+					<aside class="notes"></aside>
+				</section>
+
+				<section data-background="img/bg-primary.png" class="">
+					<h3>Automation for Python</h3>
+					<img class="stripped" src="img/even_possible_aliens.gif" />
+					<aside class="notes">
+						Task automation for Python GeoDevs is less standardized and mainstream. We would like to share one method that works for us.
+					</aside>
+				</section>
+
+				<section data-background="img/bg-primary.png" class="">
+					<img class="stripped" src="img/arcpy-publishing.PNG" />
+					<aside class="notes">
+						As we all know, to publish arcpy GP tasks to server, you have to have a successful result, then you can publish. That really puts the block on "automation".
+					</aside>
+				</section>
+
+				<section data-background="img/bg-primary.png" class="">
+					<h3>The Plan*</h3>
+					<ol>
+						<li>Use <a href="http://resources.arcgis.com/en/help/main/10.2/index.html#//001500000022000000">Python Toolbox</a></li>
+						<li>Grunt task to copy files from working directory to: <pre class="highlight">arcgissystem\arcgisinput\[folder]\[tool name].GPServer\extracted\v101\</pre></li>
+						<li>Grunt task to restart ArcGIS Server: <a href="https://www.npmjs.com/package/grunt-ags-admin">grunt-ags-admin</a></li>
+					</ol>
+					<small style="float:right">* Use for development only, and at your own risk!</small>
+					<aside class="notes">
+						After this, short demo of how this works.
+					</aside>
+				</section>
+
 <!--  							-->
 <!-- 		DEV TOOLS		-->
 <!--  							-->
