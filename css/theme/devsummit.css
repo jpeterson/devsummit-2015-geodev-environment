@@ -276,3 +276,7 @@ body {
   color: #cff370;
   font-weight: bold;
   font-size: 1.25em; }
+
+.reveal .slides section .fragment.highlight-current-green.current-fragment {
+  font-size: 1.25em;
+  color: #cff370; }
