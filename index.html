@@ -45,7 +45,7 @@
 					<h5 style="padding-top:30px">Gavin Rehkemper &amp; Josh Peterson</h5>
 
 					<aside class="notes">
-						
+						<p></p>
 					</aside>
 				</section>
 				<section data-background="img/stl-dc.png" class="about">
@@ -88,7 +88,7 @@
 				</section>
 
 				<section data-background="img/bg-primary.png">
-					<div style="line-height:2em;padding-bottom:20px">	
+					<div style="line-height:2em;padding-bottom:20px">
 						Javascript and Python are the<br>
 						Batman and Robin of geo dev.
 					</div>
@@ -130,7 +130,7 @@
 						Use IDE's, they make your life easier - not harder.
 					</aside>
 				</section>
-				
+
 				<section data-background="img/bg-primary.png" class="left-align">
 					<h2>Theme it</h2>
 					<div style="text-align:center">
@@ -232,7 +232,7 @@
 
 				<section data-background="img/bg-primary.png" class="left-align">
 					<div style="text-align:center">
-						<img src="img/anaconda-pep8.png" height="303" style="margin: 0 auto;">
+						<img class="stripped" src="img/anaconda-pep8.png" height="303" style="margin: 0 auto;">
 						<div>
 							<span class="tool-name">Anaconda</span> for Python
 						</div>
@@ -295,34 +295,7 @@
 					</aside>
 				</section>
 
-<!-- Python -->
-				<section data-background="img/bg-primary.png" class="">
-					<h3>Automation for Python</h3>
-					<img class="stripped" src="img/even_possible_aliens.gif" />
-					<aside class="notes">
-						Task automation for Python GeoDevs is less standardized and mainstream. We would like to share one method that works for us.
-					</aside>
-				</section>
 
-				<section data-background="img/bg-primary.png" class="">
-					<img class="stripped" src="img/arcpy-publishing.PNG" />
-					<aside class="notes">
-						As we all know, to publish arcpy GP tasks to server, you have to have a successful result, then you can publish. That really puts the block on "automation".
-					</aside>
-				</section>
-
-				<section data-background="img/bg-primary.png" class="">
-					<h3>The Plan*</h3>
-					<ol>
-						<li>Use <a href="http://resources.arcgis.com/en/help/main/10.2/index.html#//001500000022000000">Python Toolbox</a></li>
-						<li>Grunt task to copy files from working directory to: <pre class="highlight">arcgissystem\arcgisinput\[folder]\[tool name].GPServer\extracted\v101\</pre></li>
-						<li>Grunt task to restart ArcGIS Server: <a href="https://www.npmjs.com/package/grunt-ags-admin">grunt-ags-admin</a></li>
-					</ol>
-					<small style="float:right">* Use for development only, and at your own risk!</small>
-					<aside class="notes">
-						After this, short demo of how this works.
-					</aside>
-				</section>
 
 
 <!-- JavaScript -->
@@ -439,6 +412,45 @@
 					</aside>
 				</section>
 
+<!-- Python -->
+				<section data-background="img/bg-primary.png" class="">
+					<h3>Automation for Python</h3>
+					<img class="stripped" src="img/even_possible_aliens.gif" />
+					<aside class="notes">
+						Task automation for Python GeoDevs is less standardized and mainstream. We would like to share one method that works for us.
+					</aside>
+				</section>
+
+				<section data-background="img/bg-primary.png" class="">
+					<img class="stripped" src="img/arcpy-publishing.PNG" />
+					<aside class="notes">
+						As we all know, to publish arcpy GP tasks to server, you have to have a successful result, then you can publish. That really puts the block on "automation".
+					</aside>
+				</section>
+
+				<section data-background="img/bg-primary.png" class="">
+					<h3>The Plan*</h3>
+					<ol>
+						<li>Use <a href="http://resources.arcgis.com/en/help/main/10.2/index.html#//001500000022000000">Python Toolbox</a></li>
+						<li>Grunt task to copy files from working directory to: <pre class="highlight">arcgissystem\arcgisinput\[folder]\[tool name].GPServer\extracted\v101\</pre></li>
+						<li>Grunt task to restart ArcGIS Server: <a href="https://www.npmjs.com/package/grunt-ags-admin">grunt-ags-admin</a></li>
+					</ol>
+					<small style="float:right">* Use for development only, and at your own risk!</small>
+					<aside class="notes">
+						After this, short demo of how this works.
+					</aside>
+				</section>
+
+				<section data-background="img/bg-primary.png" class="">
+					<video width="720" height="405" controls>
+						<source src="vid/GeoDevEnv-PythonGrunt.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<aside class="notes">
+						Initial task. Grunt task that is watching our "src" folder, and when it sees a changes, runs grunt sync to copy the files to our AGS config store, and then restarts the service using the grunt-ags-admin grunt task. So for a quick demo, lets add in a single line that will log out a message to the output of the GP service. When we save the file, the grunt task will run, copying the files and restarting the service. Then we'll run the GP service again through our REST endpoint, and BAM it's  automatically updated!<br /><br />Alternative to HTML5 video: http://youtu.be/lFBt1MoFIvA
+					</aside>
+				</section>
+
 <!--  							-->
 <!-- 		DEV TOOLS		-->
 <!--  							-->
@@ -463,7 +475,7 @@
 			    <span class="fragment fade-in" data-fragment-index="2">
         		<span class="fragment fade-out" data-fragment-index="3">
         			<img src="img/firefox-logo.png" height="150" style="position:absolute; top:150px; left:125px; z-index:2" class="stripped">
-        			<img src="img/firefox.png" style="position:absolute; top:65px; left:79px" height="500px" class="stripped">       			
+        			<img src="img/firefox.png" style="position:absolute; top:65px; left:79px" height="500px" class="stripped">
         		</span>
     			</span>
 					<span class="fragment fade-in" data-fragment-index="3">
