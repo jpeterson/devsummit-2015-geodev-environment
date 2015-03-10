@@ -133,6 +133,32 @@ module.exports = function(grunt) {
 			html: {
 				files: ['index.html']
 			}
+		},
+
+		copy: {
+			main: {
+				files: [{
+					expand: true,
+					src: [
+						'index.html',
+						'js/*',
+						'img/*',
+						'css/*.min.css',
+						'css/theme/*',
+						'lib/**',
+						'plugin/**'
+					],
+					dest: 'dist/',
+					flatten: false
+				}]
+			}
+		},
+
+		'gh-pages': {
+			options: {
+				base: 'dist'
+			},
+			src: ['**']
 		}
 
 	});
@@ -147,6 +173,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-zip');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-gh-pages');
 
 	// Default task
 	grunt.registerTask('default', ['css', 'js']);
@@ -171,5 +199,8 @@ module.exports = function(grunt) {
 
 	// Run tests
 	grunt.registerTask('test', ['jshint', 'qunit']);
+
+	// Deploy to gh-pages
+	grunt.registerTask('deploy', ['copy', 'gh-pages']);
 
 };
