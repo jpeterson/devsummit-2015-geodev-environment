@@ -143,8 +143,10 @@ module.exports = function(grunt) {
 						'index.html',
 						'js/*',
 						'img/*',
+						'vid/*',
 						'css/*.min.css',
 						'css/theme/*',
+						'css/print/*',
 						'lib/**',
 						'plugin/**'
 					],
@@ -201,6 +203,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('test', ['jshint', 'qunit']);
 
 	// Deploy to gh-pages
-	grunt.registerTask('deploy', ['copy', 'gh-pages']);
+	grunt.registerTask('deploy', ['default', 'copy', 'gh-pages']);
+	grunt.registerTask('deploy-local', ['default', 'copy']);
 
 };
